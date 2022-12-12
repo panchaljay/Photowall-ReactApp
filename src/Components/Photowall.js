@@ -1,25 +1,30 @@
 import React from 'react'
 import Photo from './Photo'
 import PropTypes from 'prop-types'
-import {Link} from 'react-router-dom'
-// anchor tag, href attribute
+import { Link } from 'react-router-dom'
 function Photowall(props) {
- return <div>
-            <Link className= "addIcon"  to="/AddPhoto"> </Link> 
-             <div className="photoGride" > 
+    return (
+        <div>
+            <Link
+                style={{ textDecoration: "none", color: "inherit" }}
+                to="/AddPhoto">
+                <i class="addIcon fa-duotone fa-plus"></i>
+            </Link>
+            <div className="photoGride" >
                 {props.posts
-                .sort(function(x,y) {
-                    return y.id - x.id
-                })                
-                .map((post, index) => <Photo key ={index}  post={post} {...props} index ={index}/>)}
-             </div>
+                    .sort(function (x, y) {
+                        return y.id - x.id
+                    })
+                    .map((post, index) => <Photo key={index} post={post} {...props} index={index} />)}
+            </div>
         </div>
+    )
 
 }
 
-    Photowall.propTypes = {
+Photowall.propTypes = {
     posts: PropTypes.array.isRequired,
 
-    }
+}
 
-export default Photowall 
+export default Photowall

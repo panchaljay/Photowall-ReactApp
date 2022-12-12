@@ -1,214 +1,235 @@
 html {
-    font-size: 10px;
-    font-family: sans-serif;
+  font-size: 10px;
+  font-family: sans-serif;
 }
-p{
-    font-size: 1.6rem;
-    line-height:1.5;
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
 }
-h1{
-    font-family:'billabong','billabongregular';
-     text-align: center;
-    font-size: 13rem;
-    font-weight:100;
-    margin: 2rem 0;
-    letter-spacing: 0rem;
-    color: black; 
+h1 {
+  font-family: "billabong", "billabongregular";
+  text-align: center;
+  font-size: 13rem;
+  font-weight: 100;
+  margin: 2rem 0;
+  letter-spacing: 0rem;
+  color: black;
 }
-h1 a{
-    color: black;
-    text-decoration:none
+h1 a {
+  color: black;
+  text-decoration: none;
 }
 h1 a:focus {
-        outline: 0;
-    }
- @font-face{
-    font-family:'billabong';
-    src: url("https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.eot?#iefix") format('embedded-opentype');
-    
-    src: url("https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.eot");
-    src: url("https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.eot?#iefix") format('embedded-opentype'), url("https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.woff") format('woff'), url("https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.ttf") format('truetype'), url("https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.svg#billabongregular") format('svg');
-    font-weight: normal;
-    font-style: normal
-}  
-.photoGride{
-    max-width: 1000px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    } 
-.figure{
-    flex-basis: calc(33.333% - 4rem);
-    border: 1px solid #d3d3d3;
-    padding: 2rem;
-    flex-grow: 1;
-    margin: 0 2rem 2rem 2rem;
-} 
-.photo{
-     width: calc(100% + 4rem);
-     margin: -2rem 0rem 0rem -2rem;
-     max-width: none
-     
+  outline: 0;
 }
-.button-container{
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+@font-face {
+  font-family: "billabong";
+  src: url("https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.eot?#iefix")
+    format("embedded-opentype");
 
+  src: url("https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.eot");
+  src: url("https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.woff")
+      format("woff"),
+    url("https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.ttf")
+      format("truetype"),
+    url("https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.svg#billabongregular")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+.photoGride {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.figure {
+  flex-basis: calc(33.333% - 4rem);
+  border: 1px solid #d3d3d3;
+  padding: 2rem;
+  flex-grow: 1;
+  margin: 0 2rem 2rem 2rem;
+}
+.photo {
+  width: calc(100% + 4rem);
+  margin: -2rem 0rem 0rem -2rem;
+  max-width: none;
+}
+.button-container {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 button {
-
-    flex-basis: 48%;
-    color: red;
-    font-size: 15px;
-    border: 2px solid#f2f2f2;
-    line-height: 2;
-    padding: 5px;
- 
+  flex-basis: 48%;
+  color: red;
+  font-size: 15px;
+  border: 2px solid#f2f2f2;
+  line-height: 2;
+  padding: 5px;
 }
-.addIcon{
-margin: 20px auto;
-display: table;
-padding: 40px; 
-background-image:url("https://cdn-icons.flaticon.com/png/512/4210/premium/4210903.png?token=exp=1643028865~hmac=c8ac7eae8b2f8177e028cf22156a8a29");
-background-size:contain;
-border: none;
+.addIcon {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIoAAACKCAMAAABCWSJWAAAAYFBMVEX///8AAADPz8/5+fnn5+fT09MvLy/q6urt7e38/PzHx8dRUVFeXl6zs7PX19fj4+OVlZWhoaGJiYlqampDQ0M1NTUlJSV2dnZYWFgWFha+vr5ISEjd3d0PDw9/f3+bm5u3l3lFAAAEFklEQVR4nO1ba5eiMAxFioK8UUBUlP//L3d0XEgLoQ2iJ7un9+uEzjXNs00dx8LCwsLCwsLi/0XgJsXhGJVVXVdldDwUiRt8n4XwwlO524ywK0+hJ75IZJs3YxYDmnz7HR5pcZ7j8YtzkX6axz6MDYg8ycTh/pNMLpEZj19El88RmbDTeew+Q8Y7UYk8cPJWJyK6JUQe6Fb27e11KZPN5rqqa1+WE3lgPYsRmJXsmnuXhGnm+1kaJt29wez6tNImBdXU6nXUpYHyH0SQdlE9JV2ukpzaqbXjBPUML4mnFNi+z8SdWDb357/x84mdct9lEt5GO9MZKDvoRrq8he8xcUdMckMLFPmIy1t6adXljpn5x9lR/foNewkULd8S2veJotN6sR8JxYuv5HziKUG6WhpflMh2R+oP4betj/yP/V1e47SMiRLtC0SseIaRGP2zvMqiHLCV10DMJO03sUJKyEReZ0FuFPI2I7+mBbEMC6iydq90c5HrE8x1pKi6Q4RkvXRUJp6ZnWwWiFH9UPKeOyIklHaowZQv+RHRi6T9vWJdRKY0ImcsFu8lw6N5EbSBG6pRxclm3MODcRezqUlISsGj/aiAwBOeZLoEtexh53XE5QhUHJgbI/O+MYTLz+RiCpXMUE4BrAjzGTkKFQfWL7EpkxQ4Rj0XHElUBKg4zqbnDDAizcZGEhUpfmPBUAVQym62oKZR8UGEOJsxgdFizlKoVCRrMdsh+MV8l0Gk4hv/xhdgYtFYOpEK9Ew0XUHAnKwpq6lUYMg1yc8gvtUaeSoVD/izSYMGyoNII0ql4oCEYlIqlIO4zrbIVIBHlHomAfB+nceZFwkvpIPoTt+euai0yLauhG2hUilUiUx2FPg79SkRWLnscEVjeHgMcW6kEA8Dhb7pBb8UlrQt+cz2L6SeBBS5+jR0GIRBKkwXM/nhAkwOpMSDlgqotoAKJ4/jTFEN64Dtn6kOXwCuP0ShkX3SMOwFiJ+6oCWFlV6xYuqgj4C4t3/gzfrAArair2r98eo09AkeVLjV9P8HAGmiz0CjczAqeicCubb+l6gw2iBGZsvImRmFOEaBn1E6ZFQkMCqdGBWUjMpsTs0Ho5aMUaPKqH1ndKjB6aiH0QEYp2NBRoeljI6QOR2sM7puYHQJw+lqitOFHaNrTOVyFwt0hpe78p01eciCz5U3p0EARuMRo6ER1F7mh0aU2cuFg4N8RmkcUcrrvD9gVC4eYAzURpk6dqV8btKGYeAzjMZpRG96cFEzQfmAv/7gIqdxTk5Drvjobz41+pt/cvTXYCDa8740EO0wGhN3OA3Pc3pS4DB6aPEAm+cnTzJcHuX8YO+aP1VyP/pU6QEuD7hebHTP2r7E4wk2j/1e4PEE0sLCwsLCwsLia/gDlfVBfwCKTGgAAAAASUVORK5CYII=")center no-repeat;
+  background-size: contain;
+  padding: 40px;
+  display: table;
+  margin: 20px auto;
+  border: none;
 }
-.form{
-    background:white;
-    margin: 0 auto;
-    max-width:360px;
-    padding:45px;
-    text-align: center;
-} 
+/* .addIcon {
+  margin: 20px auto;
+  display: table;
+  padding: 30px;
+  color: white;
+  background-color: black;
+  border: 2px solid black;
+  background-size: cover;
+  border-radius: 50%;
+} */
+.form {
+  background: white;
+  margin: 0 auto;
+  max-width: 360px;
+  padding: 45px;
+  text-align: center;
+}
 .form input {
-    font-family: Sans-Serif;
-    background: #f2f2f2;
-    width:100%;
-    border:none;
-    padding:15px;
-    box-sizing: border-box;
-    font-size: 14px;
-    margin: 0 0 15px;  
+  font-family: Sans-Serif;
+  background: #f2f2f2;
+  width: 100%;
+  border: none;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+  margin: 0 0 15px;
 }
 form button {
-    font-family: "Roboto", sans-serif;
-    text-transform: uppercase;
-    outline: 0;
-    background:#065784;
-    width: 100%;
-    border: 0;
-    padding: 15px;
-    color: #FFFFFF;
-    font-size: 14px;
-    -webkit-transition: all 0.3 ease;
-    transition: all 0.3 ease;
-    cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #065784;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #ffffff;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
 }
 body {
-    background: offwhite;
+  background: offwhite;
 }
-.from button:hover{
-    background: #7B8559;
+.from button:hover {
+  background: #7b8559;
 }
-button:hover{
-    border-color: blue;
+button:hover {
+  border-color: blue;
 }
 .figure .single-photo {
-    flex-basis: calc(33.333% - 4rem);
-    flex-grow: 1;
-    flex-shrink: 0;
-    margin: 0 2rem 2rem 2rem;
-    padding: 2rem;
-    border: 1px solid #d3d3d3;
-    background: #fff;
-    position: relative;
+  flex-basis: calc(33.333% - 4rem);
+  flex-grow: 1;
+  flex-shrink: 0;
+  margin: 0 2rem 2rem 2rem;
+  padding: 2rem;
+  border: 1px solid #d3d3d3;
+  background: #fff;
+  position: relative;
 }
 .single-photo {
-    max-width: 1000px;
-    margin: 0 auto;
-    display: flex;
-    background: #fff;
-    border: black;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  background: #fff;
+  border: black;
 }
 .single-photo .figure {
-    box-shadow: none;
-    margin: 0 2rem 0 0;
-    border: 0;
-    padding: 0;
-    flex: 1 0 60%;
-    max-width: 60%;
+  box-shadow: none;
+  margin: 0 2rem 0 0;
+  border: 0;
+  padding: 0;
+  flex: 1 0 60%;
+  max-width: 60%;
 }
 .single-photo .comments {
-    flex: 1 0 40%;
-    max-width: 40%;
+  flex: 1 0 40%;
+  max-width: 40%;
 }
 .single-photo .photo {
-    width: 100%;
-    margin: 0;
+  width: 100%;
+  margin: 0;
 }
-.comment{
-    width: 45%
+.comment {
+  width: 45%;
 }
 .comment p {
-    border-bottom: 1px solid #d3d3d3;
-    padding: 0.5rem 0;
+  border-bottom: 1px solid #d3d3d3;
+  padding: 0.5rem 0;
 }
 .comment-form input,
 .comment-form textarea {
-    width: 100%;
-    border: 0;
-    font-size: 1.3rem;
-    padding: 1rem 0;
-    border-bottom: 1px solid #d3d3d3;
-    outline: none;
-    resize: vertical;
+  width: 100%;
+  border: 0;
+  font-size: 1.3rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid #d3d3d3;
+  outline: none;
+  resize: vertical;
 }
-button, .button {
-    border: 2px solid #f2f2f2;
-    background: none;
-    flex-basis: 48%;
-    display: inline-block;
-    line-height: 2;
-    text-decoration: none;
-    padding: 5px;
-    text-align:center;
-    font-size: 15px;
-    color: red;
-    transition: all 0.2s;
-    box-sizing: padding-box;
+button,
+.button {
+  border: 2px solid #f2f2f2;
+  background: none;
+  flex-basis: 48%;
+  display: inline-block;
+  line-height: 2;
+  text-decoration: none;
+  padding: 5px;
+  text-align: center;
+  font-size: 15px;
+  color: red;
+  transition: all 0.2s;
+  box-sizing: padding-box;
 }
-button:hover,.button:hover, button:focus, .button:focus {
-    border-color: #00f;
-    outline: 0;
+button:hover,
+.button:hover,
+button:focus,
+.button:focus {
+  border-color: #00f;
+  outline: 0;
 }
 .comment-count {
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: black
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
 }
 .speech-bubble {
-    background: url("https://d30y9cdsu7xlg0.cloudfront.net/png/51904-200.png") center no-repeat;
-    background-size: contain;
-    padding: 10px;
-    margin: 5px;
-    display: inline-block;
-    border: none;
-    align-items:center;
-    position: relative;
+  background: url("https://d30y9cdsu7xlg0.cloudfront.net/png/51904-200.png")
+    center no-repeat;
+  background-size: contain;
+  padding: 10px;
+  margin: 5px;
+  display: inline-block;
+  border: none;
+  align-items: center;
+  position: relative;
 }
-.form button:hover,.form button:active,.form button:focus {
-    background: #7B8589;
+.form button:hover,
+.form button:active,
+.form button:focus {
+  background: #7b8589;
 }
 .loader {
-    height: 20%;
-    width: 100%;
-    display: flex;
-    position: fixed;
-    align-items: center;
-    justify-content: center;
-    font-size: 28pt;
+  height: 20%;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  font-size: 28pt;
 }
